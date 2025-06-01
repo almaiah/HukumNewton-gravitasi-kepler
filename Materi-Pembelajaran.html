@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Materi Pembelajaran - Hukum Gravitasi Newton</title>
+
+  <style>
+    body {
+      background-color: #001020;
+      color: #cce9e6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    nav#nav {
+      background-color: #004d40;
+      padding: 10px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav#nav a.nav-button {
+      color: #a0f0d9;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav#nav a.nav-button:hover {
+      background-color: #00796b;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 40px 20px 20px;
+      background: rgba(0,10,30,0.85);
+      border-radius: 15px;
+      box-shadow: 0 0 20px #00897b;
+    }
+
+    h1, h2 {
+      color: #4db6ac;
+      margin-top: 0;
+    }
+
+    h3 {
+      color: #80cbc4;
+    }
+
+    p, ul {
+      margin-bottom: 1em;
+    }
+
+    ul {
+      margin-left: 1.5em;
+    }
+
+    .image-container, figure {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-container img,
+    figure img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 12px #004d40;
+    }
+
+    .caption, figcaption {
+      color: #80cbc4;
+      font-size: 0.9rem;
+      margin-top: 6px;
+      font-style: italic;
+    }
+
+    code {
+      background: rgba(0, 77, 64, 0.6);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 0 12px #004d40;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .centered-equation {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    a {
+      color: #a0f0d9;
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="nav" role="navigation" aria-label="Menu Navigasi Utama">
+    <a href="Home.html" class="nav-button">Home</a>
+    <a href="Kompetensi.html" class="nav-button">Kompetensi</a>
+    <a href="Petunjuk-Penggunaan-Website.html" class="nav-button">Petunjuk Penggunaan</a>
+    <a href="Materi-Pembelajaran.html" class="nav-button">Materi</a>
+    <a href="Latihan-Soal.html" class="nav-button">Latihan Soal</a>
+    <a href="Kunci-Jawaban.html" class="nav-button">Kunci Jawaban</a>
+    <a href="Glosarium.html" class="nav-button">Glosarium</a>
+    <a href="Tentang-Penulis.html" class="nav-button">Tentang Penulis</a>
+  </nav>
+
+  <main>
+    <h1>Hukum Gravitasi Newton</h1>
+
+    <h2>Menemukan Massa Bumi dan Hukum Gravitasi Universal Newton</h2>
+    <p><strong>Tahukah kamu?</strong><br />
+    Massa Bumi diperkirakan sekitar <code>6 × 10²⁴ kg</code>. Tapi... bagaimana para ilmuwan bisa mengetahuinya? Jawabannya: Hukum Gravitasi Newton.</p>
+
+    <h3>Apel Jatuh dan Inspirasi</h3>
+    <div class="image-container">
+      <img src="https://assets.kompasiana.com/statics/crawl/552d2ddc0423bdd7488b4567.jpeg?t=o&v=325" alt="Apel jatuh dari pohon" />
+      <div class="caption">Ilustrasi buah apel jatuh. Sumber: Compasiana</div>
+    </div>
+    <p>Newton bertanya: “Mengapa apel jatuh ke bawah?” Ini menjadi awal pemikiran tentang gravitasi universal.</p>
+
+<h3>Definisi Gaya Gravitasi</h3>
+<ul>
+  <li>Semua benda bermassa saling tarik-menarik</li>
+  <li>Gaya tergantung pada massa & jarak antar benda</li>
+</ul>
+
+<!-- Gambar dan sumber -->
+<div style="text-align: center; margin-top: 20px;">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjG-6BG1e6yIiQjxh5C1FMJbUDdwpULYLsk7vxcyHMK1pSHAjDLYt_TleFTWr__En_whqaEbVE-gYQO9b1j_a2Vt-lva0qSk2Gh72EMWHu_l8peloj9YnaZH5aOCVq-N_NhqbL2k5cMnKOL/w1200-h630-p-k-no-nu/rumus-gravitasi-newton.jpg" alt="Hukum Gravitasi Newton" style="max-width: 100%; height: auto;">
+  <p style="font-size: 0.9rem; color: #23ff6c;">Sumber: Dunia Fisika Kita</p>
+</div>
+
+
+<h2>Medan Gravitasi</h2>
+<p>Bumi dan Bulan saling tarik-menarik meskipun tidak bersentuhan, karena keduanya berada dalam jangkauan pengaruh gravitasi satu sama lain. Interaksi ini disebut aksi jarak jauh dan terjadi karena Bulan berada dalam medan gravitasi Bumi.</p>
+<p>Medan gravitasi adalah sifat ruang di sekitar suatu benda dimana benda lain akan merasakan gaya. Pola medan ini dapat digambarkan menggunakan garis-garis medan, mirip seperti pola serbuk besi di sekitar magnet. Garis-garis yang lebih rapat menunjukkan medan yang lebih kuat, dan panah pada garis menunjukkan arah medan.</p>
+
+<div class="image-container">
+  <img src="https://www.schoolphysics.co.uk/age16-19/Mechanics/Gravitation/text/Gravitational_potential_gradient/images/1.png" alt="Ilustrasi Medan Gravitasi" />
+  <div class="caption">Gambar tersebut menunjukkan garis-garis dengan kekuatan medan gravitasi yang sama (g) di sekitar Bumi (putus-putus). Semua garis tersebut terpisah sama dalam hal kekuatan medan tetapi jarak radial di antara keduanya meningkat saat Anda menjauh dari planet ini. Ini berarti bahwa ada sedikit perubahan dalam g dengan jarak dekat ke permukaan Bumi. Sumber: https://www.schoolphysics.co.uk/</div>
+</div>
+
+    <h2>Rumus Gaya Gravitasi Newton</h2>
+    <div style="text-align: center; margin-top: 20px;">
+      <img src="https://akupintar.id/documents/20143/0/M8K2%283%29-1.png/0fe63b9a-08b8-b8c3-f97c-3196b43b5796?t=1643944484784" alt="Rumus gaya gravitasi Newton" />
+      <div class="caption">Rumus Gaya Gravitasi. Sumber: Belajar Pintar</div>
+    </div>
+    <div class="centered-equation">
+      G = 6.674 × 10<sup>-11</sup> N·m²/kg²
+    </div>
+
+    <h3>Energi Potensial Gravitasi</h3>
+<p>Energi potensial gravitasi yang biasa kita hitung dengan rumus <code>Ep = mgh</code> hanya berlaku untuk benda yang berada dekat dengan permukaan bumi. Hal ini karena pada daerah tersebut percepatan gravitasi (<code>g</code>) dianggap konstan.</p>
+<p>Kalau benda berada sangat dekat dengan permukaan planet, energi potensialnya bisa dihitung dari selisih energi potensial antara posisi benda dan permukaan planet.</p>
+<p>Namun, jika benda bergerak jauh dari bumi, rumus sederhana itu tidak lagi berlaku.</p>
+<p>Energi potensial gravitasi pada jarak yang jauh dari bumi dihitung dengan rumus:</p>
+<div class="image-container">
+  <img src="https://i.ytimg.com/vi/Ci0WD0wdJv0/maxresdefault.jpg" alt="Rumus energi potensial gravitasi universal" />
+  <div class="caption">Rumus energi potensial gravitasi. Sumber: YouTube - Dan The Tutor</div>
+</div>
+
+<p><strong>Keterangan:</strong></p>
+<ul>
+  <li><strong>G</strong> = konstanta gravitasi,</li>
+  <li><strong>M</strong> = massa bumi,</li>
+  <li><strong>m</strong> = massa benda,</li>
+  <li><strong>r</strong> = jarak dari pusat bumi ke benda.</li>
+</ul>
+<p>Tanda negatif (<strong>-</strong>) menunjukkan bahwa energi potensial gravitasi berkurang saat benda bergerak lebih dekat ke bumi (dari jarak tak hingga ke jarak <code>r</code>). Penurunan energi potensial ini berubah menjadi energi kinetik, sehingga benda makin cepat saat mendekati bumi.</p>
+<p>Jika benda dimulai dari tempat yang sangat jauh (<code>r = ∞</code>) dengan energi kinetik nol, saat mencapai permukaan bumi, energi kinetiknya sama besar dengan energi potensial gravitasi yang hilang.</p>
+
+
+<h3>Potensial Gravitasi</h3>
+<p>
+  Potensial gravitasi adalah energi potensial gravitasi per satuan massa. Rumusnya adalah:
+</p>
+
+<div class="image-container">
+  <img src="https://www.pelajaran.co.id/wp-content/uploads/2016/04/10fis.jpg" alt="Rumus potensial gravitasi dasar" />
+  <div class="caption">Sumber: Pelajaran.Co.id</div>
+</div>
+
+<p><strong>Keterangan:</strong><br />
+  V = potensial gravitasi (J/kg) <br />
+  G = Konstanta gravitasi (6,67 × 10⁻¹¹ N·m²/kg²) <br />
+  M = massa bumi atau planet (kg) <br />
+  r = jarak benda ke pusat bumi atau planet (m)
+</p>
+
+
+<p>
+  Potensial gravitasi merupakan besaran <strong>skalar</strong>, karena itu potensial yang disebabkan oleh beberapa benda bermassa merupakan jumlah aljabar dari potensial gravitasi masing-masing benda bermassa itu, yaitu:
+</p>
+
+<div class="centered-equation">
+  V<sub>t</sub> = V<sub>1</sub> + V<sub>2</sub> + V<sub>3</sub> + ... + V<sub>n</sub>
+</div>
+
+
+<h3>Gerak Satelit</h3>
+
+<p>Gerak satelit</p>
+
+<div style="text-align:center; margin-bottom: 1em;">
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/CaZdI6qRMQA?autoplay=1&mute=1&controls=1" 
+    title="Video Gerak Satelit" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+  </iframe>
+      <p><em>Sumber: SSERD</em></p>
+</div>
+
+<p>
+  Satelit adalah benda langit yang mengitari planet dengan ukuran lebih kecil dari planet tersebut. Ada dua jenis satelit:
+</p>
+
+<ul>
+  <li>
+    <strong>Satelit alamiah</strong>: Contohnya Bulan yang mengitari Bumi.
+    <div style="text-align:center; margin-top: 0.5em; margin-bottom: 1em;">
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/ZVnDoaT35dY?autoplay=1&mute=1&controls=1&feature=share" 
+        title="Video Bulan Mengitari Bumi" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+      </iframe>
+          <p><em>Sumber: Nisda Official</em></p>
+    </div>
+  </li>
+  <li>
+    <strong>Satelit buatan</strong>: Contohnya satelit Palapa yang diluncurkan manusia.
+    <div style="text-align:center; margin-top: 0.5em; margin-bottom: 1em;">
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/UFPtk3PHrtI?autoplay=1&mute=1&controls=1&feature=share" 
+        title="Video Satelit Palapa" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+      </iframe>
+          <p><em>Sumber: Kompas TV</em></p>
+    </div>
+  </li>
+</ul>
+
+<p>
+  Saat satelit bergerak mengitari planet, terdapat dua gaya utama yang bekerja, yaitu gaya sentripetal dan gaya gravitasi.<br>
+  Gaya sentripetal adalah gaya yang membuat satelit bergerak melingkar dengan arah menuju pusat rotasi, sedangkan gaya gravitasi adalah gaya tarik planet yang menarik satelit ke pusatnya. Agar satelit tetap berada di orbit, gaya sentripetal harus sama besar dengan gaya gravitasi, sehingga kecepatan linier satelit dapat dihitung dengan rumus:
+</p>
+
+<div style="text-align:center; margin: 1em 0;">
+  <img src="https://www.pelajaran.co.id/wp-content/uploads/2016/04/8a.jpg" alt="Rumus kecepatan satelit" style="max-width:100%; height:auto;">
+</div>
+
+<p>
+  di mana <em>G</em> adalah konstanta gravitasi, <em>M</sub></em> massa planet, dan <em>R</em> jarak satelit dari pusat planet.<br>
+  Jika kecepatan satelit terlalu rendah, gaya gravitasi akan menariknya jatuh ke planet, sedangkan jika terlalu tinggi, satelit akan lepas dari orbitnya. Dengan demikian, keseimbangan kedua gaya ini menentukan stabilitas dan kelangsungan orbit satelit.
+</p>
+
+
+<h3>Sejarah Kepler</h3>
+
+<p>
+  Johannes Kepler (1571–1630) adalah seorang astronom dan matematikawan asal Jerman yang terkenal karena merumuskan tiga hukum pergerakan planet. 
+  Kepler awalnya bekerja sebagai asisten Tycho Brahe, seorang astronom Denmark. Setelah kematian Brahe, Kepler melanjutkan analisis data pengamatan 
+  dan akhirnya menyimpulkan bahwa orbit planet tidak berbentuk lingkaran sempurna, melainkan elips.
+</p>
+
+<div style="text-align:center; margin: 1em 0;">
+  <img src="https://th.bing.com/th/id/R.c089602078abf119b665fefcfeb77e1a?rik=qwm5xpnRFrRpiQ&riu=http%3a%2f%2fwww.johanneskepler.info%2fwp-content%2fuploads%2fjohannes-kepler-portrait-image-12.jpg&ehk=Z94ntz%2bEdY7RdTu3UX%2f7qdGNUYBnQKRCQNqLFvlYavk%3d&risl=&pid=ImgRaw&r=0" 
+       alt="Potret Johannes Kepler" style="max-width:100%; height:auto;">
+  <p><em>Sumber: johanneskepler.info</em></p>
+</div>
+
+<p>
+  Tiga hukum Kepler yang terkenal adalah:
+</p>
+<ol>
+  <li><strong>Hukum I:</strong> Setiap planet bergerak dalam lintasan elips dengan Matahari berada di salah satu fokusnya.</li>
+  <li><strong>Hukum II:</strong> Garis yang menghubungkan planet ke Matahari menyapu luas yang sama dalam waktu yang sama.</li>
+  <li><strong>Hukum III:</strong> Kuadrat periode orbit planet sebanding dengan pangkat tiga dari jarak rata-rata planet ke Matahari.</li>
+</ol>
+
+
+<p>
+  Penemuan hukum Kepler menjadi dasar penting bagi pemahaman gerak benda langit dan memberikan pondasi bagi hukum gravitasi Newton. 
+  Keakuratan hukum-hukum ini terbukti dalam berbagai aplikasi astronomi dan fisika modern.
+</p>
+
+
+<h3>Hukum Kepler I: Orbit Elips</h3>
+
+<div style="text-align:center; margin-bottom: 1em;">
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/iqBQlfXg_bg?autoplay=1&mute=1&loop=1&playlist=iqBQlfXg_bg" 
+    title="Video Hukum Kepler I: Orbit Elips" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+  </iframe>
+    <p><em>Sumber: Aerodynamic Animation</em></p>
+</div>
+
+<p><strong>Materi Hukum I Kepler: Orbit Elips</strong></p>
+
+<p>
+  Johannes Kepler adalah seorang ilmuwan yang lahir pada tahun 1571 M di Wurttemberg. Ia merupakan asisten sekaligus murid dari Tycho Brahe. Pada tahun 1605 M, Kepler menyampaikan gagasannya terkait peredaran benda langit sekaligus merevisi anggapan-anggapan sebelumnya yang dicetus oleh Aristoteles dan Copernicus.
+</p>
+<p>
+  Kepler menjelaskan bahwa lintasan yang dilalui planet ketika mengitari Matahari bukanlah berbentuk epicycle, melainkan berbentuk elips. Anggapan Kepler ini berdasarkan pada hasil penemuan dari Tycho Brahe yang tersusun dalam tabel Rudolphine. Kepler mempercayai bahwa Matahari mengerjakan sebuah gaya pada planet-planet dan ia menempatkan Matahari sebagai pusat sistem (heliosentris).
+</p>
+<p>
+  Setelah beberapa tahun menganalisis secara teliti data-data yang diperoleh dari Brahe, Kepler berhasil menemukan hukum-hukum yang menjelaskan gerak orbital dari setiap planet mengitari Matahari.
+</p>
+
+<div style="text-align:center; margin: 1em 0;">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEje-XeI7F5RjSCTj5S3C_YKz03Aq6ORdCdc8PIBH9_lbQRkCiROCBjdkEF3hAuiRZBJWsOogU9ePnHmwzOQ4fRWfs_lcoqjTzKQdDk7N4OAjMI2YOyS8ZHPwx5CNKX1V8QfvayW21CeCw/s1600/kepler+1.jpg" alt="Hukum Kepler I: Orbit Elips" style="max-width:100%; height:auto;">
+  <p><em>Sumber: Blog Dwi Noviyanto - Hukum Kepler dan Hukum Newton</em></p>
+</div>
+
+
+<p>
+  Hukum I Kepler berbunyi: <strong>“The orbit of each planet is an ellipse, having the sun in one focus”</strong> (Setiap planet bergerak mengelilingi Matahari dalam lintasan berbentuk elips dimana Matahari terletak pada salah satu titik fokusnya). 
+</p>
+<p>
+  Meski secara teknis elips tidak sama dengan lingkaran, sebagian besar planet mengikuti orbit yang ber-eksentrisitas rendah, sehingga secara kasar bisa dibilang mengaproksimasi lingkaran. Jika dilihat dari pengamatan jalan edar planet, tidak jelas kalau orbit sebuah planet adalah elips.
+</p>
+<p>
+  Namun, dari bukti perhitungan Kepler, orbit-orbit itu adalah elips, yang juga memperbolehkan benda-benda angkasa yang jauh dari Matahari untuk memiliki orbit elips, dan Matahari berada di salah satu fokus elips tersebut.
+</p>
+
+<h3>Hukum Kepler II: Luas Juring Sama</h3>
+
+<div style="text-align:center; margin-bottom: 1em;">
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/PsUe4YxIkwo?autoplay=1&mute=1&loop=1&playlist=PsUe4YxIkwo" 
+    title="Video Hukum Kepler II: Luas Juring Sama" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+  </iframe>
+  <p><em>Sumber: Aerodynamic Animation</em></p>
+</div>
+
+
+<p>
+  “As the planet moves round the sun, its radius sector (or the line joining it to the sun) passes over equal areas in equal times” <br>
+  (Luas daerah yang disapu oleh garis penghubung antara planet dan Matahari dalam waktu yang sama adalah sama).
+</p>
+
+<p>
+  Hukum ini menjelaskan bahwa kecepatan orbit suatu planet akan lebih lambat ketika planet berada pada titik terjauh dari Matahari (titik aphelion) dan kecepatan orbit suatu planet akan lebih cepat ketika planet berada di titik terdekat dengan Matahari (titik perihelion).
+</p>
+
+<p>
+  Jadi, kecepatan orbit maksimum planet terjadi ketika berada di titik perihelion dan kecepatan orbit minimum terjadi ketika berada di titik aphelion. Jika waktu edar planet sama, dalam hal ini t1 = t2 = t3, maka luas daerah yang menyapu juring pada waktu yang sama memiliki luas yang sama pula (A1 = A2 = A3).
+</p>
+
+<div style="text-align:center; margin-top: 1em;">
+  <img src="https://hasangf.wordpress.com/wp-content/uploads/2014/05/kepler2.png?w=319" alt="Hukum Kepler II" style="max-width:100%; height:auto;">
+<p><em>Sumber: <a href="https://hasangf.wordpress.com/2014/05/20/hukum-hukum-kepler/" target="_blank" rel="noopener noreferrer">hasangf.wordpress.com</a></em></p>
+</div>
+
+<h3>Hukum Kepler III: T² ∝ R³</h3>
+
+<div style="text-align:center; margin-bottom: 1em;">
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/a9Yd4_o_3Rg?autoplay=1&mute=1&loop=1&playlist=a9Yd4_o_3Rg" 
+    title="Video Hukum Kepler III" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+<p style="text-align:center; font-size: 0.85rem;">
+  Sumber video: AerodynamicAnimation (YouTube)
+</p>
+
+<p>
+  Hukum I dan II Kepler dipublikasikan pada tahun 1609, yang berdasarkan data-data pengamatan yang diperoleh Tycho Brahe. Kemudian Kepler mencari hubungan antara gerak planet-planet yang berbeda, dan suatu penjelasan untuk menghitung gerak-gerak planet tersebut. Sepuluh tahun kemudian (1619), Kepler berhasil mengemukakan hubungan tersebut dan mengungkapkannya dalam Hukum III Kepler yaitu:
+</p>
+
+<p>
+  <em>“The square of the time of revolution of each planet is proportional to the cube of its mean distance from the sun”</em> <br>
+  (Kuadrat periode revolusi suatu planet berbanding lurus dengan pangkat tiga jarak rata-ratanya dari Matahari).
+</p>
+
+<div class="centered-equation" style="text-align:center; font-size: 1.2em; margin: 1em 0;">
+  T₁² / R₁³ = T₂² / R₂³ = konstanta
+</div>
+
+<p>
+  Dengan adanya ketiga Hukum Kepler ini, semakin terbuka jalan bagi ilmuwan dan peneliti dalam memahami pergerakan benda langit, baik secara nyata maupun semu, yang belum pernah dijelaskan secara sistematis sebelumnya. Selain itu, Hukum Kepler juga memotivasi ilmuwan lain untuk menyempurnakan dan menemukan teori-teori baru, seperti Isaac Newton dengan hukum gravitasi universalnya.
+</p>
+
+
+
+<div style="text-align:center; margin-top: 1em;">
+  <img src="https://bloggeografi.id/wp-content/uploads/2020/06/hukum-kepler-123.png" alt="Hukum Kepler I, II, III" style="max-width:100%; height:auto;">
+</div>
+
+<p style="text-align:center; font-size: 0.85rem;">
+  Sumber gambar: Hukum Kepler – Guru Geografi MAN 1 Gunungkidul DIY
+</p>
+
+
+   
+  </main>
+  
+</body>
+</html>
